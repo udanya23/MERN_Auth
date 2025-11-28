@@ -9,7 +9,7 @@ const routeItems = require("./routes/auth.js")
 const dashboardRoutes=require("./routes/dashboard.js")
 
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: "https://mern-auth-frontend-v8uh.onrender.com",
     credentials: true,
 }))
 app.use(express.urlencoded({extended:true}))
