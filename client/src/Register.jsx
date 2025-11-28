@@ -17,7 +17,7 @@ export default function App() {
   function handleSubmit(e) {
     e.preventDefault()
     console.log(formData)
-    axios.post("http://localhost:2000/api/register", formData)
+    axios.post(`${import.meta.env.VITE_API_URL}/register`, formData)
       .then((res) => {
         if (res.status === 200) {
           alert("User data inserted successfully")
